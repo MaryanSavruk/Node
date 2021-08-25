@@ -13,7 +13,6 @@ app.use(express.urlencoded({extends: true}))
 
 app.use(express.static(path.join(__dirname, 'static')));
 
-
 app.get('/', (req, res) => {
     // res.end('<div style="background-color: blanchedalmond">This is end</div>')
     // res.send('<h2 style="background-color: darkgoldenrod">Send respons</h2>')

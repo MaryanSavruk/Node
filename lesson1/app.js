@@ -2,10 +2,10 @@ const fs = require('fs');
 const path = require('path');
 const util = require('util');
 
-
+// eslint-disable-next-line no-unused-vars
 const textPath = path.join(__dirname, 'dir', 'tex.txt');
+// eslint-disable-next-line no-unused-vars
 const TextPath2 = path.join(__dirname, 'dir', 'tex2.txt');
-
 
 // const userWrite = fs.writeFile(textPath, "Some text", err => console.log(err));
 
@@ -16,10 +16,11 @@ const TextPath2 = path.join(__dirname, 'dir', 'tex2.txt');
 // fs.appendFile(textPath, '\nNew info \n', err => {
 //     console.log(err)
 // });
-
+// eslint-disable-next-line no-unused-vars
 const appendPromise = util.promisify(fs.appendFile);
-
+// eslint-disable-next-line no-unused-vars
 const mkdir = path.join(__dirname, 'dir2', 'folder', 'retweet');
+// eslint-disable-next-line no-unused-vars
 const folderWithDeletedData = path.join(__dirname, 'dir2', 'folder', 'retweet', 'deleted.txt');
 // fs.mkdir(mkdir, {recursive: true}, err => {  //створення папок з вкладеністю
 //     console.log(err)
@@ -68,7 +69,6 @@ const folderWithDeletedData = path.join(__dirname, 'dir2', 'folder', 'retweet', 
 //         });
 // }
 
-
 // const readStream = fs.createReadStream(folderWithDeletedData);
 // const writeStream = fs.createWriteStream(TextPath2);
 //
@@ -80,21 +80,3 @@ const folderWithDeletedData = path.join(__dirname, 'dir2', 'folder', 'retweet', 
 // console.timeEnd('STRM');
 
 // readStream.pipe(writeStream); // скорочений сиетакс для read-write
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
